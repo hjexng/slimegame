@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class HitPad : MonoBehaviour
 {
-    private GameManger gameManger;
+    private GameManager gameManger;
     private Button button;
 
     private void Awake()
     {
-        gameManger = FindObjectOfType<GameManger>();
+        gameManger = FindObjectOfType<GameManager>();
         button = GetComponent<Button>();
         button.onClick.AddListener(gameManger.HitSlime);
     }
 }
+

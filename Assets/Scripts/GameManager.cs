@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
         curSlime = newSlime.GetComponent<Monster>();
     }
 
+
     private void Update()
     {
         if (curSlime == null)
@@ -25,9 +26,10 @@ public class GameManager : MonoBehaviour
 
     public void HitSlime()
     {
-        if(curSlime != null)
+        if (curSlime != null)
         {
             curSlime.OnHit(damage);
         }
     }
 }
+
