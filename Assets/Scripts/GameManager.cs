@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManger : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     [SerializeField] private Monster[] slimes;
     [SerializeField] private float damage;
     private Monster curSlime;
-    private float criticalDamage;
-    private float criticalPercent;
-    private float gold;
 
     public void SpawnSlime()
     {
@@ -26,7 +23,7 @@ public class GameManger : MonoBehaviour
         }
     }
 
-    public void HitSlime() 
+    public void HitSlime()
     {
         if(curSlime != null)
         {
